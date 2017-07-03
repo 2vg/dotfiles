@@ -7,4 +7,4 @@
 - done.
 - *on windows, make _vimrc + _gvimrc and .vimrc -> _vimrc + _gvimrc
 - *on mac, idk ;)
-- *init.vim -> neovim. example XDG_CONFIG_HOME=~/.vim (~/.vim/nvim/dein, ,~/.vim/plugin, ~/.vim/init.vim)
+- *init.vim -> neovim. example -> XDG_CONFIG_HOME = ~/.vim + (~/.vim/nvim/dein, ~/.vim/plugin, ~/.vim/init.vim)
