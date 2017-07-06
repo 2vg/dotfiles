@@ -1,7 +1,6 @@
 [[plugins]]
 repo = 'Shougo/neocomplete.vim'
 on_i = 1
-
-[[plugins]]
-repo = 'Townk/vim-autoclose'
-on_i = 1
+hook_add = '''
+  let g:neocomplete#enable_at_startup = 1
+'''

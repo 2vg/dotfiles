@@ -1,6 +1,6 @@
 "***********************
 " Modfied by @2vg
-" last test env @Vim 8.0
+" last test env @neovim v0.2
 "***********************
 
 "***********************
@@ -19,6 +19,11 @@ endif
 "-----------------------
 set nobackup
 set noswapfile
+
+"-----------------------
+" Auto Read
+"-----------------------
+set autoread
 
 "-----------------------
 " Encode
@@ -56,6 +61,7 @@ nnoremap <silent><Esc><Esc> :<C-u>set nohlsearch!<CR>
 set whichwrap=b,s,h,l,<,>,[,],~
 set number
 set cursorline
+set colorcolumn=80
 
 nnoremap j gj
 nnoremap k gk
@@ -83,9 +89,9 @@ set wildmenu
 set history=5000
 set showtabline=2
 
------------------------
- use mouse
------------------------
+"-----------------------
+" use mouse
+  "-----------------------
 if has('mouse')
   set mouse=a
 endif
@@ -111,7 +117,6 @@ set t_Co=256
 "-----------------------
 " Shell
 "-----------------------
-" want to use, comment out.
 "set shell=/bin/sh
 
 "***********************
@@ -137,7 +142,7 @@ endif
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
 
-  let g:plugin_dir    = expand('~/.vim/plugin')
+  let g:plugin_dir = expand('~/.vim/plugin')
   let s:toml      = g:plugin_dir . '/dein.toml'
   let s:lazy_toml = g:plugin_dir . '/dein_lazy.toml'
 
@@ -159,5 +164,5 @@ filetype plugin indent on
 "-----------------------
 let g:solarized_termcolors=256
 syntax enable
-set background=dark
+set background="dark"
 colorscheme solarized

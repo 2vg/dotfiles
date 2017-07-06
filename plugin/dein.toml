@@ -14,10 +14,10 @@ repo = 'vim-scripts/sudo.vim'
 repo = 'bronson/vim-trailing-whitespace'
 
 [[plugins]]
-repo = 'vim-airline/vim-airline-themes'
-hook_add = '''
-  let g:airline_theme='powerlineish'
-'''
+repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'Townk/vim-autoclose'
 
 [[plugins]]
 repo = 'altercation/vim-colors-solarized'
@@ -43,19 +43,25 @@ hook_add = '''
 repo = 'vim-airline/vim-airline'
 hook_add = '''
   let g:airline_powerline_fonts = 1
-  
+
   let g:airline#extensions#tabline#enabled = 1
   let g:airline#extensions#tabline#left_sep = ' '
   let g:airline#extensions#tabline#left_alt_sep = '|'
 
-  let g:airline#extensions#branch#enabled = 0
+  let g:airline#extensions#branch#enabled = 1
   let g:airline#extensions#readonly#enabled = 0
   let g:airline_section_b =
         \ '%{airline#extensions#branch#get_head()}' .
         \ '%{""!=airline#extensions#branch#get_head()?("  " . g:airline_left_alt_sep . " "):""}' .
         \ '%{airline#extensions#readonly#get_mark()}' .
         \ '%t%( %M%)'
-  let g:airline_section_c = ''  
+  let g:airline_section_c = ''
+'''
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+hook_add = '''
+  let g:airline_theme='powerlineish'
 '''
 
 [[plugins]]
@@ -64,7 +70,7 @@ hook_add = '''
   set laststatus=2
   set showmode
   set showcmd
-  set ruler 
+  set ruler
 '''
 
 #[[plugins]]
