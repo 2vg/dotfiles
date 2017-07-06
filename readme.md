@@ -2,10 +2,8 @@
 
 ## .vimrc Install
 - clone or download (or C O P Y a n d P A S T E).
-- .vimrc and plugin folder -> ~/.vim/
-- if you want to add more plugin, edit plugin/dein.toml.
-- done.
-- *on windows, make _vimrc + _gvimrc and .vimrc -> _vimrc + _gvimrc
-- *on mac, idk ;)
-- *init.vim -> neovim. example -> XDG_CONFIG_HOME=~/.vim
-- *neovim(~/.vim/nvim/dein, ~/.vim/plugin, ~/.vim/init.vim)
+- exec install.sh
+- Y O U W I N.
+- and... want add more  plugin, you should edit.
+
+bye sir.
