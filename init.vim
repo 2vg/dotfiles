@@ -21,6 +21,11 @@ set nobackup
 set noswapfile
 
 "-----------------------
+" Auto Read
+"-----------------------
+set autoread
+
+"-----------------------
 " Encode
 "-----------------------
 set encoding=utf-8
@@ -56,6 +61,7 @@ nnoremap <silent><Esc><Esc> :<C-u>set nohlsearch!<CR>
 set whichwrap=b,s,h,l,<,>,[,],~
 set number
 set cursorline
+set colorcolumn=80
 
 nnoremap j gj
 nnoremap k gk
@@ -120,7 +126,7 @@ set t_Co=256
 "-----------------------
 " if not installed, will auto install.
 "-----------------------
-let s:dein_dir = expand('~/nvim/dein')
+let s:dein_dir = expand('~/.vim/dein')
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
 if &runtimepath !~# '/dein.vim'
@@ -136,7 +142,7 @@ endif
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
 
-  let g:plugin_dir = expand('~/nvim/plugin')
+  let g:plugin_dir = expand('~/.vim/plugin')
   let s:toml      = g:plugin_dir . '/dein.toml'
   let s:lazy_toml = g:plugin_dir . '/dein_lazy.toml'
 
