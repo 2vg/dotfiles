@@ -1,6 +1,6 @@
 "***********************
 " Modfied by @2vg
-" last test env @neovim v0.2
+" last test env @vim v8.0
 "***********************
 
 "***********************

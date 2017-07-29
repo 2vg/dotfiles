@@ -1,10 +1,12 @@
 #!/bin/sh
 mkdir ~/.vim
 cp .vimrc ~/
-cp -f plugin ~/.vim/
+cp .zshrc ~/
+cp -r plugin ~/.vim/
 
 # Neovim
-$XDG_CONFIG_HOME = ~/
-mkdir ~/nvim
-cp init.vim ~/nvim/
-cp -f plugin ~/nvim/
+#mkdir ~/.nvim/nvim
+#$XDG_CONFIG_HOME = ~/.nvim
+#cp .vimrc init.vim
+#cp init.vim $XDG_CONFIG_HOME/nvim/
+#cp -r plugin $XDG_CONFIG_HOME/nvim/

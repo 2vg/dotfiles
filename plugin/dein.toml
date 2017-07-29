@@ -50,7 +50,7 @@ hook_add = '''
   let g:lightline = {
     \  'colorscheme': 'solarized_dark',
     \  'active': {
-    \  'left': [ [ 'mode', 'paste' ], [ 'filename', 'modified' ], [ 'anzu' ] ],
+    \  'left': [ [ 'mode', 'paste' ], [ 'filename', 'modified' ] ],
     \  'right': [ [ 'lineinfo' ], [ 'fileformat', 'fileencoding', 'filetype' ], [ 'charcode' ] ],
     \  },
     \  'inactive': {
@@ -69,7 +69,7 @@ hook_add = '''
     \    'fileformat': 'LightLineFileformat',
     \    'fileencoding': 'LightLineFileencoding',
     \    'filetype': 'LightLineFiletype',
-    \   'charcode': 'LightLineCharcode',
+    \    'charcode': 'LightLineCharcode',
     \  },
   }
 '''
