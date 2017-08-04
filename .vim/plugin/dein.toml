@@ -48,7 +48,7 @@ hook_add = '''
   set ruler
 
   let g:lightline = {
-    \  'colorscheme': 'solarized_dark',
+    \  'colorscheme': 'solarized',
     \  'active': {
     \  'left': [ [ 'mode', 'paste' ], [ 'filename', 'modified' ] ],
     \  'right': [ [ 'lineinfo' ], [ 'fileformat', 'fileencoding', 'filetype' ], [ 'charcode' ] ],
@@ -60,7 +60,7 @@ hook_add = '''
     \  'tabline': {
     \    'left': [ [ 'tabs' ] ],
     \    'right': [],
-    \  },
+    \ },
     \  'component_function': {
     \    'mode': 'LightLineMode',
     \    'filename': 'LightLineFilename',
@@ -71,7 +71,7 @@ hook_add = '''
     \    'filetype': 'LightLineFiletype',
     \    'charcode': 'LightLineCharcode',
     \  },
-  }
+ \}
 '''
 
 #[[plugins]]
