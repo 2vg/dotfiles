@@ -1,9 +1,8 @@
 # My dotfiles
 
-## .vimrc Install
-- clone or download (or C O P Y a n d P A S T E).
-- exec install.sh
-- Y O U W I N.
-- and... want add more  plugin, you should edit.
+## Setup
+``` shell
+curl -L https://github.com/2vg/dotfiles/raw/master/install.sh | sh
+```
 
 bye sir.
