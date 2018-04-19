@@ -39,6 +39,7 @@ zplug load
 # Variables
 #-------------------
 export VISUAL='vim'
+export PATH=~/.nimble/bin:$PATH
 PROMPT='%F{1}@%f%F{3}%n%f%F{5}{%f%F{6}%#%f%F{5}}%f%F{4}-%f%F{2}>%f '
 RPROMPT='[%~]'
 KEYTIMEOUT=1
