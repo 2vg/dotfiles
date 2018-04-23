@@ -71,12 +71,39 @@ vnoremap j gj
 vnoremap k gk
 vnoremap gj j
 vnoremap gk k
-inoremap <C-h> <Left>
-inoremap <C-j> <Down>
-inoremap <C-k> <Up>
-inoremap <C-l> <Right>
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+cnoremap <C-h> <Left>
+cnoremap <C-j> <Down>
+cnoremap <C-k> <Up>
+cnoremap <C-l> <Right>
 
-set backspace=indent,eol,start
+" 無効化
+noremap <C-q> <Nop>
+noremap <F1> <Nop>
+nnoremap <Left> <Nop>
+nnoremap <Down> <Nop>
+nnoremap <Up> <Nop>
+nnoremap <Right> <Nop>
+vnoremap <Left> <Nop>
+vnoremap <Down> <Nop>
+vnoremap <Up> <Nop>
+vnoremap <Right> <Nop>
+cnoremap <Left> <Nop>
+cnoremap <Down> <Nop>
+cnoremap <Up> <Nop>
+cnoremap <Right> <Nop>
+if !has('gui')
+  inoremap <Left> <Nop>
+  inoremap <Down> <Nop>
+  inoremap <Up> <Nop>
+  inoremap <Right> <Nop>
+endif
+
+" 貼り付け
+set pastetoggle=<C-p>
 
 map <Space>n :NERDTreeToggle<CR>
 
